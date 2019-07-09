@@ -16,22 +16,22 @@
 			
 			echo($text."<br>");
 			echo($user."<br>");
-			echo($datum."<br>");			
+			echo($datum."<br>");
 			$stmt = $db->prepare("INSERT INTO `shoutbox`(`text`, `user`, `date_time`) VALUES (?,?,?)");
 			$stmt->bind_param('sss', $text, $user, $datum);
 			$stmt->execute();
 			
 			mysqli_close($db);
-			header("Location: ../../../");
+			header("Location: ../");
 			exit;
 		}
 		else {
-			header("Location: ../../../");
+			header("Location: ../");
 			exit;
 		}
 	}
 	else {
-		header("Location: ../../../");
+		header("Location: ../");
 		exit;
 	}
 ?>
