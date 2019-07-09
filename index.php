@@ -31,7 +31,7 @@
 		}
 	}
 	if ($_SESSION['besucht'] == 1) {
-		echo("<form action='./tools/php/shoutbox/shoutbox.php' method='POST'>
+		echo("<form action='.//shoutbox.php' method='POST'>
 			<input type='text' name='shout' maxlength='500' style='width: 186px;'><button >Senden</button>
 		</fomr");
 	}
